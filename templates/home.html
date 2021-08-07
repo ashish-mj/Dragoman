@@ -1,6 +1,30 @@
-<h1>Dragoman</h1>
-<form action="{% url 'translate'%}">
-    <input type="text" name="initial_text"/>
-    <br/>
-    <input type="submit" value="Translate"/>
-</form>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dragoman</title>
+    <link rel="stylesheet" href="{% static 'css/grid.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="../static/images/translator.png" type="image/jpg">
+  </head>
+  <body>
+        <div class="row box">
+            <img src="{% static 'images/translator.png' %}" class='logo'>
+            <h1>DRAGOMAN</h1>
+        </div>
+        
+        <div class="row form-text">
+            <div class="col span-1-of-3"></div>
+            <div class="col span-1-of-3">
+            <form action="{% url 'translate'%}">
+                <input type="text" name="initial_text"/>
+                <br/>
+                <input type="submit" value="Translate"/>
+            </form>
+            </div>
+            <div class="col span-1-of-3"></div>
+        </div>   
+ </body>
+ </html>
