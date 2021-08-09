@@ -1,25 +1,70 @@
-*{
+* {
+    box-sizing: border-box;
     color: white;
-}
+  }
 
 body{
     background-color: black;
-    height: 100vh;
 }
 
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+
 .box{
+    position: fixed;
+    left:0;
+    top:0;
     padding-left: 10px;
 }
 .logo{
     float: left;
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 h1{
-display: block;
-padding-left: 70px;
+display: inline-block;
+margin-left: 30px;
+margin-top: 30px;
 }
 .form-text{
-    margin-top: 150px;
+    position: fixed;
+    width: 100%;
+    margin-top: 250px;
+}
+
+input[type=text]
+{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    background-color: black;
+    margin-bottom: 25px;
+   
+}
+
+.radio{
+    margin-bottom: 25px;
+    margin-left: 65px;
+}
+input[type=submit]{
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000000;
+    font-size: 20px;
+    padding: 16px 50px;
+    margin-left: 120px;
+}
+
+
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #d2cad4;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
