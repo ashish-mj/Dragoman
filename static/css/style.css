@@ -68,3 +68,28 @@ input[type=submit]:active{
     background-color: #d2cad4;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+.social-links{
+    list-style: none;
+    float: right;
+    margin-left: 700px;
+}
+
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links li a:link,
+.social-links li a:visited
+{
+    text-decoration: none;
+    color: white;
+    border: 0;
+    transition: color 0.2s;
+}
+
+.links{
+    height: 60px;
+    width: 60px;
+}
