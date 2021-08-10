@@ -11,12 +11,16 @@ from django.shortcuts import render
 from googletrans import Translator
 translator = Translator()
 
-def hello(request):
+def home(request):
     return render(request,'home.html')
 
 def translate(request):
-    data=request.GET['initial_text']
-    translations = translator.translate(data,dest='hi')
-    print(translations.text)
-    return HttpResponse(translations.text)
+    original = request.GET['initial_text']
+    selection = request.GET['type']
+    translation=""
+    if selection=="English-Hindi":
+         translation = translator.translate(original,src='en',dest='hi')
+    else:
+        translation = translator.translate(original,src='hi',dest='en')
+    return render(request,'translate.html',{'original': original,'translation':translation.text})
 

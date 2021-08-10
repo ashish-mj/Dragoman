@@ -93,3 +93,30 @@ input[type=submit]:active{
     height: 60px;
     width: 60px;
 }
+
+.result-text{
+    position: fixed;
+    width: 100%;
+    border: white;
+    margin-top: 10%;
+    margin-left: 1%;
+    font-size: 150%;
+    
+}
+
+.result-box{
+    padding: 10px 15px;
+    border-style: dotted;
+}
+
+.btn{
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
